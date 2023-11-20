@@ -34,7 +34,9 @@ public partial class SisDbContext : GenSisDbContext
         // For RAW SQL queries...
 
         modelBuilder.Entity<TeacherNameDTO>().HasNoKey();
-        modelBuilder.Entity<Concept>().HasNoKey();
+        modelBuilder.Entity<Concept>();
+        modelBuilder.Entity<InfoType>();
+        modelBuilder.Entity<Info>();
 
         // SOFT DELETE
         foreach (var entityType in modelBuilder.Model.GetEntityTypes())
@@ -59,6 +61,8 @@ public partial class SisDbContext : GenSisDbContext
 
     public DbSet<TeacherNameDTO> TeacherNameDTO { get; set; }
     public DbSet<Concept> Concept { get; set; }
+    public DbSet<InfoType> InfoType { get; set; }
+    public DbSet<Info> Info { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

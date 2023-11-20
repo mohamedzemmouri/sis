@@ -1,0 +1,271 @@
+﻿[
+  {
+    "tables": [
+      {
+        "name": "AcademicYear",
+        "description": "Table containing information about academic years."
+      },
+      {
+        "name": "Trajectory",
+        "description": "Table holding trajectory information."
+      },
+      {
+        "name": "CourseType",
+        "description": "Table containing types of courses."
+      },
+      {
+        "name": "Course",
+        "description": "Table containing course information."
+      },
+      {
+        "name": "CourseTrajectory",
+        "description": "Table linking courses to trajectories."
+      },
+      {
+        "name": "TopicCategory",
+        "description": "Table holding categories of topics."
+      },
+      {
+        "name": "Topic",
+        "description": "Table containing topic information."
+      },
+      {
+        "name": "LearningOutcomeType",
+        "description": "Table containing types of learning outcomes."
+      },
+      {
+        "name": "LearningOutcome",
+        "description": "Table containing learning outcome information."
+      },
+      {
+        "name": "ControlLevel",
+        "description": "Table containing control levels."
+      },
+      {
+        "name": "LearningTarget",
+        "description": "Table containing learning targets."
+      },
+      {
+        "name": "InfoType",
+        "description": "Table containing types of information."
+      },
+      {
+        "name": "Concept",
+        "description": "Table containing concepts."
+      },
+      {
+        "name": "Info",
+        "description": "Table containing additional information."
+      },
+      {
+        "name": "Country",
+        "description": "Table containing country information."
+      },
+      {
+        "name": "Address",
+        "description": "Table containing address information."
+      },
+      {
+        "name": "Person",
+        "description": "Table containing person information."
+      },
+      {
+        "name": "RegistrationState",
+        "description": "Table containing registration states."
+      },
+      {
+        "name": "IOEM",
+        "description": "Table containing information about IOEM."
+      },
+      {
+        "name": "Student",
+        "description": "Table containing student information."
+      },
+      {
+        "name": "StudentIOEM",
+        "description": "Table linking students to IOEM."
+      },
+      {
+        "name": "TeacherType",
+        "description": "Table containing types of teachers."
+      },
+      {
+        "name": "Teacher",
+        "description": "Table containing teacher information."
+      },
+      {
+        "name": "StudentGroup",
+        "description": "Table containing student groups."
+      },
+      {
+        "name": "TeacherGroup",
+        "description": "Table containing teacher groups."
+      },
+      {
+        "name": "Student_StudentGroup",
+        "description": "Table linking students to student groups."
+      },
+      {
+        "name": "Teacher_TeacherGroup",
+        "description": "Table linking teachers to teacher groups."
+      },
+      {
+        "name": "Education",
+        "description": "Table containing education information."
+      },
+      {
+        "name": "Company",
+        "description": "Table containing company information."
+      },
+      {
+        "name": "Contact",
+        "description": "Table containing contact information."
+      },
+      {
+        "name": "Internship",
+        "description": "Table containing internship information."
+      },
+      {
+        "name": "Internship_Contact",
+        "description": "Table linking internships to contacts."
+      },
+      {
+        "name": "Campus",
+        "description": "Table containing campus information."
+      },
+      {
+        "name": "Location",
+        "description": "Table containing location information."
+      },
+      {
+        "name": "Building",
+        "description": "Table containing building information."
+      },
+      {
+        "name": "RoomType",
+        "description": "Table containing room types."
+      },
+      {
+        "name": "RoomKind",
+        "description": "Table containing room kinds."
+      },
+      {
+        "name": "Room",
+        "description": "Table containing room information."
+      },
+      {
+        "name": "CoordinationRole",
+        "description": "Table containing coordination roles."
+      },
+      {
+        "name": "TeacherPreference",
+        "description": "Table containing teacher preferences."
+      },
+      {
+        "name": "TeacherCoordinationRoleInterest",
+        "description": "Table linking teachers to coordination role interests."
+      },
+      {
+        "name": "TeacherCourseInterest",
+        "description": "Table containing teacher course interests."
+      },
+      {
+        "name": "TeacherInterest",
+        "description": "Table containing teacher interests."
+      },
+      {
+        "name": "TeacherLocationInterest",
+        "description": "Table containing teacher location interests."
+      },
+      {
+        "name": "Period",
+        "description": "Table containing period information."
+      },
+      {
+        "name": "SchedulingTimeslot",
+        "description": "Table containing scheduling timeslots."
+      },
+      {
+        "name": "TeacherAssignmentPercentageInterest",
+        "description": "Table containing teacher assignment percentage interests."
+      },
+      {
+        "name": "CourseGroup",
+        "description": "Table containing course groups."
+      },
+      {
+        "name": "CourseGroup_TeacherGroup",
+        "description": "Table linking course groups to teacher groups."
+      },
+      {
+        "name": "CourseGroup_StudentGroup",
+        "description": "Table linking course groups to student groups."
+      },
+      {
+        "name": "CourseGroup_Student",
+        "description": "Table linking course groups to students."
+      },
+      {
+        "name": "CourseGroup_Teacher",
+        "description": "Table linking course groups to teachers."
+      },
+      {
+        "name": "Schedule",
+        "description": "Table containing schedule information."
+      },
+      {
+        "name": "Test",
+        "description": "Table containing test information."
+      },
+      {
+        "name": "Score",
+        "description": "Table containing score information."
+      },
+      {
+        "name": "RubricColumn",
+        "description": "Table containing rubric columns."
+      },
+      {
+        "name": "RubricRowHeader",
+        "description": "Table containing rubric row headers."
+      },
+      {
+        "name": "RubricRow",
+        "description": "Table containing rubric rows."
+      },
+      {
+        "name": "Rubric",
+        "description": "Table containing rubric information."
+      },
+      {
+        "name": "Rubric_RubricRow",
+        "description": "Table linking rubrics to rubric rows."
+      },
+      {
+        "name": "Rubric_RubricRowHeader",
+        "description": "Table linking rubrics to rubric row headers."
+      },
+      {
+        "name": "Rubric_RubricColumn",
+        "description": "Table linking rubrics to rubric columns."
+      },
+      {
+        "name": "RubricInstance",
+        "description": "Table containing rubric instances."
+      },
+      {
+        "name": "RubricInstanceScore",
+        "description": "Table containing rubric instance scores."
+      },
+      {
+        "name": "PresenceState",
+        "description": "Table containing presence states."
+      },
+      {
+        "name": "Presence",
+        "description": "Table containing presence information."
+      }
+    ]
+  }
+
+]

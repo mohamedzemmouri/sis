@@ -11,6 +11,9 @@ namespace SIS.API
         {
             CreateMap<Domain.Teacher, TeacherDTO>().ReverseMap();
             CreateMap<Concept, ConceptDTO>().ReverseMap();
+            CreateMap<InfoType, InfoTypeDTO>().ReverseMap();
+            CreateMap<Info, InfoDTO>().ReverseMap();
+
         }
     }
 }

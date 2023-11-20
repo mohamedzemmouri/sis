@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace SIS.Infrastructure.EFRepository.Models;
 
 public partial class Concept
 {
+    [Key]
     public int ConceptId { get; set; }
 
     public string? TableName { get; set; }

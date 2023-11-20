@@ -22,15 +22,6 @@ namespace SIS.API.Controllers
         [HttpGet(Name = "GetConcepts")]
         public ActionResult<IEnumerable<TeacherDTO>> Get()
         {
-            /*
-            var dtos = _repository.Teachers.Values.Select(t => new TeacherDTO
-            {
-                FirstName = t.FirstName, 
-                LastName = t.LastName
-            })
-            .ToArray();
-            return Ok(dtos);
-            */
             return Ok(_mapper.Map<List<TeacherDTO>>(_repository.Refreshconcepts()));
         }
     }

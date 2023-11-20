@@ -35,12 +35,16 @@ internal partial class Program
 // -------------------------------------------------------
                   .AddSingleton<IImporter, LectorImporterService>()
                   .AddSingleton<IImporter, ConceptImporterService>()
+                  .AddSingleton<IImporter, InfoTypeImporterService>()
+                  .AddSingleton<IImporter, InfoImporterService>()
                   // classes using DbContext should have lifetime Scoped... (esp. ASP.NET Core)
                   .AddScoped<ISISTeacherTypeRepository, EFSISTeacherTypeRepository>() // here I could pick the ADO.NET alternative
                   .AddScoped<ISISRegistrationStateRepository, EFSISRegistrationStateRepository>() // here I could pick the ADO.NET alternative
                   .AddScoped<ISISPersonRepository, EFSISPersonRepository>() // here I could pick the ADO.NET alternative
                   .AddScoped<ISISTeacherRepository, EFSISTeacherRepository>() // here I could pick the ADO.NET alternative
                   .AddScoped<ISISConceptRepository, EFSISConceptRepository>() // here I could pick the ADO.NET alternative
+                  .AddScoped<ISISInfoTypeRepository, EFSISInfoTypeRepository>() // here I could pick the ADO.NET alternative
+                  .AddScoped<ISISInfoRepository, EFSISInfoRepository>() // here I could pick the ADO.NET alternative
 // -------------------------------------------------------
                   .UseSuperConvertExcelService(); // SuperConvert is integrated through its own service
             })

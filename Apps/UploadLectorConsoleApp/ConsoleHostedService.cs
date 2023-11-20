@@ -11,19 +11,29 @@ internal partial class Program
         private readonly IConfiguration _configuration;
         private readonly IHostApplicationLifetime _appLifetime;
         private readonly IImporter _lectorImporterService;
+        private readonly IImporter _ConceptImportService;
+        private readonly IImporter _InfoTypeImportService;
+        private readonly IImporter _InfoImportService;
         private readonly ISISTeacherRepository _repository;
+
         private int? _exitCode;
 
         public ConsoleHostedService(
             ILogger<ConsoleHostedService> logger,
             IConfiguration configuration,
             IHostApplicationLifetime appLifetime,
-            IImporter lectorImporterService)
+            IImporter lectorImporterService,
+            IImporter conceptImportService,
+            IImporter InfoTypeImporterService,
+            IImporter infoImportService)
         {
             _logger = logger;
             _configuration = configuration;
             _appLifetime = appLifetime;
             _lectorImporterService = lectorImporterService;
+            _ConceptImportService = conceptImportService;
+            _InfoTypeImportService = InfoTypeImporterService;
+            _InfoImportService = infoImportService;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -47,6 +57,9 @@ internal partial class Program
 
                         //TeacherImporterService lectorImporterService = new(_logger, _configuration, _repository);
                         _lectorImporterService.Import();
+                        _ConceptImportService.Import();
+                        _InfoTypeImportService.Import();
+                        _InfoImportService.Import();
 
 
                         _exitCode = 0;

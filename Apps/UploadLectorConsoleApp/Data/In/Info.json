@@ -1,0 +1,22 @@
+{
+  "info": [
+    {
+      "ConceptId": 1,
+      "RefKeyId": null,
+      "InfoTypeId": 3,
+      "Data": "test"
+    },
+    {
+      "ConceptId": 1,
+      "RefKeyId": 1,
+      "InfoTypeId": 3,
+      "Data": "test part 2"
+    },
+    {
+      "ConceptId": 2,
+      "RefKeyId": null,
+      "InfoTypeId": 3,
+      "Data": "test from the other concept"
+    }
+  ]
+}

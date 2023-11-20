@@ -1,0 +1,7 @@
+{
+  "infotypes": [
+    {"name": "image"},
+    {"name": "video"},
+    {"name": "plainText"}
+  ]
+}

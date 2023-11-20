@@ -35,11 +35,14 @@ namespace SIS.Infrastructure
 
         public void Insert(Concept concept)
         {
-            if(concept != null && !_context.Concepts.Contains(concept))
+            EFRepository.Models.Concept newConcept = new()
             {
-                _context.Concepts.Add(concept);
-                _context.SaveChanges();
-            }
+                TableName = concept.TableName,
+                Description = concept.Description
+            };
+
+            var test = _context.Concepts.Add(newConcept).Entity;
+            var count = _context.SaveChanges();
         }
 
         public List<Concept> Refreshconcepts()
